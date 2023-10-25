@@ -84,7 +84,6 @@ function Carrousel({
           {">"}
         </button>
       </div>
-      {index}:{index + nextIndex}
     </div>
   );
 }
