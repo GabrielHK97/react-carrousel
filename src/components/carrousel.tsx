@@ -13,7 +13,7 @@ function Carrousel({
   images,
 }: Props) {
   const [index, setIndex] = useState(0);
-  const [nextIndex, setNexIndex] = useState(0);
+  const [nextIndex, setNextIndex] = useState(0);
   const [translate, setTranslate] = useState("0%");
   const [secs, setSecs] = useState(0);
 
@@ -26,7 +26,7 @@ function Carrousel({
   }
 
   function goRight() {
-    setNexIndex(1);
+    setNextIndex(1);
     setTranslate("-100%");
     setSecs(seconds);
     setTimeout(() => {
@@ -37,7 +37,7 @@ function Carrousel({
   }
 
   function goLeft() {
-    setNexIndex(-1);
+    setNextIndex(-1);
     setTranslate("100%");
     setSecs(seconds);
     setTimeout(() => {
